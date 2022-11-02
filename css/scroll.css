@@ -1,0 +1,25 @@
+#list-draw::-webkit-scrollbar, #wrapper-patters::-webkit-scrollbar ,#wrapper-graph::-webkit-scrollbar {
+    width: 10px;
+    /* Tamaño del scroll en vertical */
+    height: 12px;
+    /* Tamaño del scroll en horizontal */
+    /* display: none;  Ocultar scroll */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+#list-draw::-webkit-scrollbar-thumb, #wrapper-patters::-webkit-scrollbar-thumb , #wrapper-graph::-webkit-scrollbar-thumb {
+    background: #FFD369;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+#list-draw::-webkit-scrollbar-thumb:hover, #wrapper-patters::-webkit-scrollbar-thumb:hover, #wrapper-graph::-webkit-scrollbar-thumb:hover {
+    background: #bd9a49;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+#list-draw::-webkit-scrollbar-thumb:active, #wrapper-patters::-webkit-scrollbar-thumb:active, #wrapper-graph::-webkit-scrollbar-thumb:active {
+    background-color: #bd9a49;
+}
